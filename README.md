@@ -1,5 +1,5 @@
 # wikimedia-functions
-List of functions and packages for Wikimedia data import and tidying
+List of functions and packages in R for Wikimedia data import and tidying
 
 ## Packages
 ```
