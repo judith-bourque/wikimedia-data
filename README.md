@@ -3,12 +3,15 @@ List of functions and packages in R for Wikimedia data import and tidying
 
 ## Packages
 ```
+# Wikipedia
 library("WikipediR")
 library("WikipediaR")
-library("WikidataR")
-library("tidywikidatar")
 library("pageviews")
+
+# Wikidata
+library("tidywikidatar")
 library("WikidataQueryServiceR")
+library("WikidataR")
 ```
 
 ### WikipediR package
