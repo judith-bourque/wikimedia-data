@@ -10,7 +10,7 @@ library("tidywikidatar")
 library("pageviews")
 ```
 
-## Functions
+### WikipediR package
 ```R
 library("WikipediR")
 
@@ -30,6 +30,7 @@ page_backlinks()
 page_external_links()
 ```
 
+### WikipediaR package
 ```R
 library("WikipediaR")
 
