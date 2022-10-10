@@ -30,6 +30,15 @@ page_backlinks()
 page_external_links()
 ```
 
+### tidywikipediar package
+
+```R
+library("tidywikipediar")
+
+# Get Wikipedia article in given language using Wikidata item
+tw_get_wikipedia()
+```
+
 ### WikipediaR package
 ```R
 library("WikipediaR")
