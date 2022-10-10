@@ -8,6 +8,7 @@ library("WikipediaR")
 library("WikidataR")
 library("tidywikidatar")
 library("pageviews")
+library("WikidataQueryServiceR")
 ```
 
 ### WikipediR package
