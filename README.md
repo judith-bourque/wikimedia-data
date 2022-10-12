@@ -56,7 +56,47 @@ nrow(userContribs(user.name = last.contrib.5636, domain = "en")$contribs)
 ```
 
 ## Get pageviews for multiple articles
-The code below returns a dataframe.
+Get pageviews for multiple articles in multiple languages.
+
+```R
+library("tidyverse")
+library("pageviews")
+
+# Create dataframe
+
+articles <- tibble::tribble(
+  ~project, ~title,
+  "fr.wikipedia",   "Donald Trump",
+  "en.wikipedia",   "Donald Trump",
+  "fr.wikipedia",   "Joe Biden",
+  "en.wikipedia",   "Joe Biden"
+)
+
+# Get pageviews data
+
+data_list <- list()
+
+for (i in 1:nrow(articles)) {
+  response_df <- pageviews::article_pageviews(
+    project = articles$project[i],
+    articles$title[i],
+    user_type = "all-agents",
+    start = "2015010100",
+    end = "2022010100",
+    granularity = "daily"
+  )
+  
+  # Consolidate
+  data_list[[i]] <- response_df
+}
+
+# Combine data frames
+
+dataframe <- bind_rows(data_list)
+
+```
+
+Get pageviews for articles in a single language.
 ```R
 library("tidyverse")
 library("pageviews")
