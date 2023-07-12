@@ -7,6 +7,7 @@ List of functions and packages in R for Wikimedia data import and tidying
 library("WikipediR")
 library("WikipediaR")
 library("pageviews")
+library("wikipediatrend")
 library("waxer")
 
 # Wikidata
